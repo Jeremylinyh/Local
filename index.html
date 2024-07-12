@@ -29,7 +29,7 @@
                 })
                 .then(data => {
                     // Display the response data
-                    document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+                    document.getElementById('output').textContent =  'response: ' +JSON.stringify(data, null, 2);
                 })
                 .catch(error => {
                     document.getElementById('output').textContent = 'Error fetching data: ' + error.message;
